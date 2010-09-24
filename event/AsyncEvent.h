@@ -1,0 +1,5 @@
+class CAsyncEvent
+{
+public:
+private:
+}

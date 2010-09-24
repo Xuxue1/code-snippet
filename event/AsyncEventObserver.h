@@ -1,0 +1,5 @@
+class CAyncEventObserver
+{
+public :
+private :
+};
