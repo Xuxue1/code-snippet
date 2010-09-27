@@ -1,5 +1,0 @@
-class CAsyncEvent
-{
-public:
-private:
-}
