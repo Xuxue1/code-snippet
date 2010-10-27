@@ -1,7 +1,10 @@
 class CDevice
 {
 public:
-    BOOL CreatChannel();
+    OpenChannel();
+    CloseChannel();
+    AddChannel();
+    RevomeChannel();
 private:
     int m_nType;
     std::vector<unsigned int> m_uChannelId;
