@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MFC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\zz\LOCALS~1\Temp\RSP324.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/MFC.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\temp\ext18866\¸´¼þ (3) MFC\MFCDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\zz\LOCALS~1\Temp\RSP324.tmp" 
+Creating temporary file "C:\DOCUME~1\zz\LOCALS~1\Temp\RSP325.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MFC.pdb" /debug /machine:I386 /out:"Debug/MFC.exe" /pdbtype:sept 
+".\Debug\ChildDialog1.obj"
+".\Debug\ChildDialog2.obj"
+".\Debug\MFC.obj"
+".\Debug\MFCDlg.obj"
+".\Debug\MySheet.obj"
+".\Debug\Page0.obj"
+".\Debug\Page1.obj"
+".\Debug\Page2.obj"
+".\Debug\StdAfx.obj"
+".\Debug\MFC.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\zz\LOCALS~1\Temp\RSP325.tmp"
+<h3>Output Window</h3>
+Compiling...
+MFCDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+MFC.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
