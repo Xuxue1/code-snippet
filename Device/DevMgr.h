@@ -1,5 +1,7 @@
 #include "Device.h"
-#include ""
+#include "DevPreview.h"
+#include "DevCtlPtz.h"
+#include "DevAlarm.h"
 class CDeviceFactory
 {
     CDevice* CreateDevice(const unsigned int iDevIdx);
