@@ -4,7 +4,9 @@
 #include "DevAlarm.h"
 class CDeviceFactory
 {
-    CDevice* CreateDevice(const unsigned int iDevIdx);
+public:
+    static CDevice* CreateDevice(int type, const unsigned int iDevIdx, IDevUserLogin *usrLogin);
+    static void DestroyDevice(CDevice *device);
 };
 
 class CDevMgr
