@@ -1,3 +1,6 @@
+#ifndef _DISKMGR_H_
+#define _DISKMGR_H_
+
 #define MAX_DISK_NUM    100 //最大可接硬盘数
 
 typedef struct tagDiskInfo
@@ -8,7 +11,7 @@ typedef struct tagDiskInfo
     unsigned int    uRemaSpace;             //剩余磁盘容量大小 单位G
     int             iDriverType;            //磁盘类型。--1  scis，2  ide
     int             iDiskGroup;             //所属分组号
-} DISKINFO;
+} DISKINFO; //磁盘信息
 
 typedef struct tagDISKGROUP
 {
@@ -46,12 +49,13 @@ private:
 class CDiskMgr
 {
 public:
-    BOOL LoadRecordCfg(void);
-    BOOL SaveRecordCfg(void);
-    BOOL InitDiskInfo();
-    int FormatDisk(int diskid);
-    GetDiskInfo(int diskid);
-    CalcuFileSize();
+    bool LoadRecordCfg(void);
+    bool SaveRecordCfg(void);
+    bool InitDiskInfo();
+    int  FormatDisk(int diskid);
 private:
     DEVICEDISKS disks;
 };
+
+
+#endif

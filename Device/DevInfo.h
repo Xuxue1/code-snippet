@@ -1,14 +1,33 @@
+#ifndef _DEVINFO_H_
+#define _DEVINFO_H_
+#include <string>
+using namespace std;
 class CDevInfo
 {
+public:
+    CDevInfo(string devAddr, string userName, string password, string multiIPAddr, 
+             string dnsAddr, string manufacture, string devName, 
+             int port, int channel, int serialNum, int addrType, int deviceType);
+    void SetUserName(string userName);
+    void SetPassword(string password);
+    const char *GetIPAddr() { return m_strDevAddr.c_str(); }
+    const char *GetUserName() { return m_strUserName.c_str(); }
+    char *GetPassWord();
+    char *GetMultIPAddr(); 
+    int  GetPort();
 private:
-    int m_iPort;             /// 端口
-    int m_iChannel;               /// 通道数
-    std::string m_strIPAddr;///
-    std::string m_strUserName;
-    std::string m_strPassword;
-    std::string m_strMultIPAddr;
-    std::string m_strManufacture;
-    bool m_bIsDVR;
-    bool m_bIsIPCam;
-    bool m_bHasPTZ;
+    string m_strDevAddr;///
+    string m_strUserName;
+    string m_strPassword;
+    string m_strMultIPAddr;
+    string m_strDNSAddr;
+    string m_strManufacture;
+    string m_strDevName;
+    int    m_iPort; 
+    int    m_iChannel;     
+    int    m_iSerialNum;
+    int    m_iAddrType;
+    int    m_iDeviceType;
 };
+
+#endif
